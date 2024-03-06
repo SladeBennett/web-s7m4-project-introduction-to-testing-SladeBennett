@@ -52,40 +52,40 @@ Have fun with the tasks, and check out the Solution Video for this project if yo
 
 #### 👉 TASK 1 - Write RTL tests for the English language
 
-1. Start by "eyeballing" that the visible English texts that render in Chrome match the "en" texts found in the JSON file.
+1.$ Start by "eyeballing" that the visible English texts that render in Chrome match the "en" texts found in the JSON file.
 
-2. Inside the App test file, use React Testing Library to test that all the English shows correctly:
+2.$ Inside the App test file, use React Testing Library to test that all the English shows correctly:
     - Use `screen.getByText` to check that the various texts are visible.
     - Use `screen.getByPlaceholderText` to check that the placeholder texts are visible.
     - Use `screen.getByLabelText` to check that the input labels are visible.
 
-3. An example test is written for your benefit. Note that the test is using hard-coded text instead of benefitting from the data found inside the JSON. This is workable but not very maintainable: changes in the JSON made by the UX expert in your team will not propagate to the tests. It's recommended that you import the JSON into the test file and use it as the source of truth!
+3.$ An example test is written for your benefit. Note that the test is using hard-coded text instead of benefitting from the data found inside the JSON. This is workable but not very maintainable: changes in the JSON made by the UX expert in your team will not propagate to the tests. It's recommended that you import the JSON into the test file and use it as the source of truth!
 
-4. Complete 13 passing tests, corresponding to the "en" keys inside the JSON.
+4.$ Complete 13 passing tests, corresponding to the "en" keys inside the JSON.
 
 #### 👉 TASK 2 - Implement Internationalization
 
 Improve the App component so the user can toggle the UI between Spanish and English. The component receives a `lang` prop that defaults to "en". This is used to initialize a state that controls which language is used. This state can be toggled by clicking on the little flag, but all headings, buttons, placeholders and labels are using hard-coded text in English right now.
 
-1. Import the JSON file into the App component, and use it to extract the correct bits of text depending on the `language` component state.
+1.$ Import the JSON file into the App component, and use it to extract the correct bits of text depending on the `language` component state.
 
-2. Edit the JSX of the component to use the correct texts, labels and placeholders, depending on the `language` state.
+2.$ Edit the JSX of the component to use the correct texts, labels and placeholders, depending on the `language` state.
 
-3. At the end of your task, the form should switch correctly between Spanish and English!
+3.$ At the end of your task, the form should switch correctly between Spanish and English!
 
-4. After you are done, check that the tests you wrote for the English language are passing, and didn't break over the course of Task 2.
+4.$ After you are done, check that the tests you wrote for the English language are passing, and didn't break over the course of Task 2.
 
 ❗ Having tests to back you up is extremely useful whenever performing major surgery inside a component like we are doing in this task!
 
 #### 👉 TASK 3 - Write RTL tests for the Spanish language
 
-1. Inside the App test file, use React Testing Library to test that all the Spanish shows correctly, following the pattern used in Task 1.
+1.$ Inside the App test file, use React Testing Library to test that all the Spanish shows correctly, following the pattern used in Task 1.
 
-2. At this point, if you are not importing the JSON inside the test file, you should do it now.
+2.$ At this point, if you are not importing the JSON inside the test file, you should do it now.
 
-3. Complete 13 passing tests, corresponding to the "esp" keys inside the JSON.
+3.$ Complete 13 passing tests, corresponding to the "esp" keys inside the JSON.
 
-❗ The JSON should be the source of truth for both the tests and the UI at this point. A non-technical person can easily maintain the JSON file, and little edits done to the visible texts inside this document will propagate to the component and the tests, for improved maintainability. Try this out by editing some texts in the JSON yourself, and see the changes carry over to Chrome, while the tests still pass.
+❗$ The JSON should be the source of truth for both the tests and the UI at this point. A non-technical person can easily maintain the JSON file, and little edits done to the visible texts inside this document will propagate to the component and the tests, for improved maintainability. Try this out by editing some texts in the JSON yourself, and see the changes carry over to Chrome, while the tests still pass.
 
 #### 👉 TASK 4 - Write a helper function and unit-test it with Jest
 
